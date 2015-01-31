@@ -21,11 +21,14 @@ public class MainActivity extends ActionBarActivity {
         
         if(mToolbar != null) {
         	setSupportActionBar(mToolbar);
-        	mToolbar.setTitle("呵呵");
+        	mToolbar.setTitle(R.string.app_name);
         }
-        getSupportActionBar().setTitle("呵呵");
+        getSupportActionBar().setTitle(R.string.app_name);
         
     }
+    
+    
+    
     
     
     
