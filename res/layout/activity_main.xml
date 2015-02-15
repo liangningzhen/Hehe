@@ -2,7 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hehe.MainActivity" >
+    tools:context="com.hehe.MainActivity"
+    android:background="@drawable/bg"
+     >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -10,11 +12,36 @@
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="@string/hello_world" />
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        >
+        
+            <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/black"
+        android:text="@string/hello_world" 
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+        
+    </LinearLayout>
+    
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="点我看笑话" />
 
 </RelativeLayout>
