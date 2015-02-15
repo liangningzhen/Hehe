@@ -3,6 +3,7 @@ package com.hehe;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -12,6 +13,8 @@ import android.view.MenuItem;
 public class MainActivity extends ActionBarActivity {
 	
 	@InjectView(R.id.toolbar) Toolbar mToolbar;
+	
+	private Handler mHandler;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,8 @@ public class MainActivity extends ActionBarActivity {
         	mToolbar.setTitle(R.string.app_name);
         }
         getSupportActionBar().setTitle(R.string.app_name);
+        
+        
         
     }
     
