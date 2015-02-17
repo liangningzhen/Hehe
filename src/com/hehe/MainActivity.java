@@ -81,7 +81,7 @@ public class MainActivity extends ActionBarActivity {
 					mJoke.setText(jokes.get(i).content);
 					i++;
 				} else {
-					toast("暂时没有笑话");
+					toast("暂时没有笑话 ");
 				}
 			}
 		});
