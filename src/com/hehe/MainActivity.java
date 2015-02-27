@@ -30,10 +30,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.internal.bt;
 import com.hehe.bean.JokeBean;
 import com.hehe.utils.Constants;
 import com.hehe.utils.StringUtils;
