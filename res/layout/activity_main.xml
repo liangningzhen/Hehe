@@ -10,13 +10,25 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize" />
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/Indigo_colorPrimaryDark"
+         />
+    
+    
+    <LinearLayout 
+        android:id="@+id/bannerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal"
+        ></LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/bannerlayout"
         android:orientation="vertical"
         android:padding="5dp"
         android:layout_margin="5dp"
@@ -27,13 +39,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@android:color/black"
-        android:text="@string/hello_world" 
+        android:text="@string/joke" 
         android:textAppearance="?android:attr/textAppearanceMedium"
         />
         
     </LinearLayout>
-    
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toLeftOf="@+id/button1"
+        android:text="复制内容" />
 
     <Button
         android:id="@+id/button1"
@@ -41,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="23dp"
         android:text="点我看笑话" />
 
 </RelativeLayout>
